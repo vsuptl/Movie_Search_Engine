@@ -1,0 +1,132 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #02063d, #7462ff);
+}
+    
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+#img img{
+    width: 75px;
+    padding-left: 20px;
+}
+
+.TitleBox{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    padding-left: 60px;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a{
+    padding-inline: 30px;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.selectBox{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+
+.selectBox select{
+    width: 400px;
+    height: 60px;
+    font-size: 20px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.inputContainer{
+    font-size: 30px;
+    color: white;
+}
+
+.inputRow{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px
+}
+
+.inputRow input{
+    width: 400px;
+    height: 60px;
+    font-size: 20px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.inputQuestions{
+    padding: 20px
+}   
+
+.buttonBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.error{
+    font-size: 20px;
+    color: red;
+    padding-bottom: 20px;
+}
+
+#generatebtn{
+    height: 75px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.results{
+    display: flex;
+    padding-top: 30px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    color: white;
+}
+
+.results img{
+    width:  200px;
+}

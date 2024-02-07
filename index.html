@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"   tent="width=device-width, initial-scale=1.0">
+    <title>FilmFinds</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header"> 
+        <div class="TitleBox">
+            <p>FilmFinds</p>
+            <a href="http://127.0.0.1:5500/index.html" id="img">
+                <img src="camera.png" alt="logo">
+            </a>
+        </div>
+        <nav class="navbar">
+            <a href="http://127.0.0.1:5500/index.html">Home</a>
+            <a href="https://www.youtube.com/channel/UCfsYmo1F64JJVy8tjifpfhQ" target="_blank">Youtube</a>
+            <a href="https://github.com/vsuptl" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/vashisht-patel/" target="_blank">LinkedIn</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="inputQuestions">
+            <div class="selectBox">
+                <h2>Pick a genre:</h2>
+                <select id="genreBox">
+                    <option value="28">Action</option>
+                    <option value="12">Adventure</option>
+                    <option value="16">Animation</option>
+                    <option value="35">Comedy</option>
+                    <option value="80">Crime</option>
+                    <option value="99">Documetory</option>
+                    <option value="18">Drama</option>
+                    <option value="10751">Family</option>
+                    <option value="14">Fantasy</option>
+                    <option value="36">History</option>
+                    <option value="27">Horror</option>
+                    <option value="10402">Music</option>
+                    <option value="9648">Mystery</option>
+                    <option value="10749">Romance</option>
+                    <option value="878">Sci-Fi</option>
+                    <option value="10770">TV Movie</option>
+                    <option value="53">Thriller</option>
+                    <option value="10752">War</option>
+                    <option value="37">Western</option>
+                </select>
+            </div>
+            <div class="inputContainer">
+                <div class="inputRow">
+                    <h2>Pick a Year:</h2>
+                    <input type="text" id="yearInput" placeholder="1980 - 2024">
+                </div>
+            
+                <div class="inputRow">
+                    <h2>Amount of Movies:</h2>
+                    <input type="text" id="amountInput" placeholder="Min: 5 Max: 10">
+                </div>
+            </div>
+        </div>
+        <div  class="buttonBox" id="buttonb">
+            <p id="error" class="error"></p>
+            <button id="generatebtn" onclick="generateMovies()">Generate Movies</button>
+        </div>
+        <div class="results" id="resultsBox"></div>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
